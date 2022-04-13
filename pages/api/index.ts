@@ -1,5 +1,5 @@
 import { Get } from "./fetch";
-import { INowWeather } from "../types";
+import { INowWeather } from "./types";
 const gaoDeKey = "b5dc101510c3172849a4fd74a4db8508";
 const qWeather = "https://devapi.qWeather.com/v7/weather";
 const qKey = "ae9136fb06a04934bdd38d87b35ea563";

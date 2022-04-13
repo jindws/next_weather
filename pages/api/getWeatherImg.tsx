@@ -10,7 +10,7 @@ import DayStorm from "../../public/DayStorm.png";
 import styles from "./getWeatherImg.module.scss";
 import { StaticImageData } from "next/image";
 
-export default function getWeatherImg(type: string, night = false) {
+export default function getWeatherImg(type: string = "", night = false) {
   let src: StaticImageData[] = [];
   if (type.includes("雨")) {
     // 包含小雨中雨等
@@ -31,5 +31,5 @@ export default function getWeatherImg(type: string, night = false) {
   }
 
   const url = src[night ? 1 : 0];
-  return url&&<img className={styles.weather_pic} src={url.src} alt=''/>;
+  return url && <img className={styles.weather_pic} src={url.src} alt="" />;
 }

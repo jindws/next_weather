@@ -1,12 +1,12 @@
-import '../styles/globals.scss'
-import type { AppProps } from 'next/app'
+import "../styles/globals.scss";
+import type { AppProps } from "next/app";
 import Context from "./api/context";
-import useLocalData from "./components/useLocalData";
-import {useEffect, useState} from "react";
-import {getLocation, getWeather} from "./api";
-import {INowWeather} from "./types";
+import useLocalData from "./api/useLocalData";
+import { useCallback, useEffect, useState } from "react";
+import { getLocation, getWeather } from "./api";
+import { INowWeather } from "./api/types";
 import moment from "moment";
-import Script from 'next/script'
+import Script from "next/script";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [now, upNow] = useState({
@@ -46,16 +46,30 @@ function MyApp({ Component, pageProps }: AppProps) {
     return () => clearInterval(si);
   }, [rectangle]);
 
-  return <><Context.Provider value={{ locations, rectangle, now, night }}>
-    <Component {...pageProps} />
-  </Context.Provider>
-    <Script
+  const resize = useCallback(() => {
+    const maxWidth = 700;
+    const size = (Math.min(innerWidth, maxWidth) / 375) * 16;
+
+    document.getElementsByTagName("html")[0].style.fontSize = size + "px";
+  }, []);
+
+  useEffect(() => {
+    document.body.onresize = resize;
+    resize();
+  }, []);
+
+  return (
+    <>
+      <Context.Provider value={{ locations, rectangle, now, night }}>
+        <Component {...pageProps} />
+      </Context.Provider>
+      <Script
         id="echarts-js"
         src="https://cdn.bootcdn.net/ajax/libs/echarts/5.3.2/echarts.min.js"
-        onLoad={() => {
-
-        }}
-    /></>
+        onLoad={() => {}}
+      />
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;

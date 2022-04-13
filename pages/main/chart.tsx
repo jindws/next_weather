@@ -8,20 +8,19 @@ import React, {
 } from "react";
 import { get24hWeather } from "../api";
 import Context from "../api/context";
-import { IContext } from "../types";
+import { IContext } from "../api/types";
 import moment from "moment";
-import styles from './main.module.scss'
+import styles from "./main.module.scss";
 
 /**
  * 使用echarts
  * @constructor
  */
 export default function Chart() {
-  if(!globalThis.echarts)return <></>
   const { rectangle } = useContext(Context) as IContext;
   const [today, upToday] = useState([]) as any;
   const [activeIndex, upActiveIndex] = useState(Infinity);
-  const chart:any = useRef();
+  const chart: any = useRef();
 
   const [xData, yData] = useMemo(() => {
     moment.locale("en-us");
@@ -43,6 +42,7 @@ export default function Chart() {
   }, [rectangle]);
 
   useEffect(() => {
+    if (!globalThis.echarts) return;
     const myChart = echarts.init(chart.current);
     myChart.setOption({
       xAxis: {
@@ -55,8 +55,8 @@ export default function Chart() {
       yAxis: {
         type: "value",
         show: false,
-        min: Math.min.call(null, yData),
-        max: Math.max.call(null, yData) - 2,
+        min: Math.min.apply(null, yData),
+        max: Math.max.apply(null, yData) - 2,
         splitLine: {
           show: false,
         },

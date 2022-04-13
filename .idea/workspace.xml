@@ -1,48 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="188ce2ac-067a-4723-87db-67f249c07a19" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/api/context.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/api/fetch.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/api/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/components/getWeatherImg.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/components/getWeatherImg.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/components/useLocalData.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/components/usePoint.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/index.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/main/chart.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/main/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/main/main.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/main/week.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/point.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/DayCloud.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/DayRain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/DaySnow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/DayStorm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/DaySun.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/DayWind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/NightCloud.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/NightMoon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/NightRain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/NightSnow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/NightStorm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/NightWind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/back.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/design.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/humidity.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/rain.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/w.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/windSpeed.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/globals.scss" afterDir="false" />
+    <list default="true" id="188ce2ac-067a-4723-87db-67f249c07a19" name="Changes" comment="feat:build">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/getWeatherImg.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/getWeatherImg.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/getWeatherImg.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/getWeatherImg.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/useLocalData.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/useLocalData.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main/chart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main/chart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main/week.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main/week.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +40,7 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -78,8 +50,21 @@
       <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/api" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -90,8 +75,20 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -104,12 +101,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649864519652</updated>
-      <workItem from="1649864520823" duration="6796000" />
+      <workItem from="1649864520823" duration="8594000" />
     </task>
+    <task id="LOCAL-00001" summary="feat:init">
+      <created>1649871928289</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649871928289</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="feat:init" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:init" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

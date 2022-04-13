@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useContext } from "react";
 import { get7Weather } from "../api";
 import Context from "../api/context";
-import { IContext } from "../types";
+import { IContext } from "../api/types";
 import moment from "moment";
-import getWeatherImg from "../components/getWeatherImg";
-import styles from './main.module.scss'
+import getWeatherImg from "../api/getWeatherImg";
+import styles from "./main.module.scss";
 
 /**
  * 一周天气
@@ -25,11 +25,11 @@ export default function Week() {
   moment.locale("zh-cn");
   return (
     <dl className={styles.week}>
-      {data.map((itm:any) => {
+      {data.map((itm: any) => {
         return (
           <dd key={itm.fxDate}>
             <span>{moment(itm.fxDate).format("周dd")}</span>
-            {getWeatherImg(itm.textDay, night)}
+            {/*{getWeatherImg(itm.textDay, night)}*/}
             <label>
               {itm.tempMax}
               <sup>℃</sup>

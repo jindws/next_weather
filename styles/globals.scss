@@ -22,8 +22,7 @@ ul {
   list-style-type: none;
 }
 
-
-#app {
+#__next {
   max-width: 700px;
   margin: auto;
 }
@@ -31,9 +30,9 @@ ul {
 dl {
   margin-block-start: 0;
   margin-block-end: 0;
-dd {
-  margin-inline-start: 0;
-}
+  dd {
+    margin-inline-start: 0;
+  }
 }
 
 #index {
