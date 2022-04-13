@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@types/echarts": "^4.9.13",
+    "@types/next": "^9.0.0",
     "@types/node": "17.0.23",
     "@types/react": "17.0.2",
     "@types/react-dom": "17.0.2",
