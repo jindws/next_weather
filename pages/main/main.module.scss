@@ -1,0 +1,158 @@
+.main {
+  background-color: #fff;
+  margin-top: 2.4rem;
+  position: relative;
+  &__back svg {
+    position: relative;
+    left: 1.375rem;
+    width: 1.375rem;
+  }
+  &__city {
+    color: #332821;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    padding-top: 5.6rem;
+    margin-left: 1.375rem;
+  }
+  &__weather {
+    position: absolute;
+    right: 1rem;
+    top: 2.43rem;
+
+    img {
+      width: 6.25rem;
+    }
+  }
+  &__temp {
+    color: #332821;
+    font-size: 4rem;
+    font-weight: 700;
+    position: relative;
+    margin-top: 2rem;
+    display: inline-block;
+    margin-left: 1.375rem;
+    sup {
+      font-size: 1.5rem;
+      top: -0.4rem;
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.3125rem;
+    li {
+      height: 2.125rem;
+      background: rgba(216, 97, 145, 0.1);
+      display: flex;
+      align-items: center;
+      color: #d86191;
+      padding: 0 0.5rem;
+      border-radius: 1.25rem;
+    }
+    > :first-child {
+      background: rgba(101, 142, 217, 0.1);
+      color: #658ed9;
+    }
+    > :last-child {
+      background: rgba(94, 79, 193, 0.1);
+      color: #5e4fc1;
+    }
+  }
+  &__chart {
+    height: 10rem;
+  }
+  &__today {
+    color: #332821;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 1.25rem 0 0 1.25rem;
+    display: block;
+  }
+  &__card {
+    color: rgba(51, 40, 33, 1);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    justify-content: space-evenly;
+    dd {
+      flex: 0 0 5.6rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 0.5rem;
+      outline: 0;
+
+      div {
+        width: 100%;
+        text-align: center;
+        background: #fff;
+        position: relative;
+        z-index: 2;
+        border-bottom-right-radius: 1.25rem;
+        border-bottom-left-radius: 1.25rem;
+        sup {
+          font-size: 0.8rem;
+          position: relative;
+          top: -0.2rem;
+        }
+      }
+
+      &.on {
+        i {
+          background: #ececec;
+          filter: blur(20px);
+          width: 100%;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 20%;
+        }
+      }
+    }
+    label {
+      color: rgba(51, 40, 33, 0.5);
+      font-weight: 500;
+      font-size: 0.8rem;
+      display: block;
+    }
+  }
+  .week {
+    padding: 0 1.25rem;
+    margin: 1.2rem 0;
+
+    img {
+      height: 3.125rem;
+    }
+    dd {
+      display: flex;
+      align-items: center;
+      font-size: 1.1rem;
+      span,
+      label {
+        flex: 1;
+      }
+      span {
+        font-weight: 700;
+      }
+      label {
+        text-align: right;
+        font-size: 0.9rem;
+        em {
+          font-style: normal;
+          color: rgba(51, 40, 33, 0.5);
+          padding-left: 0.625rem;
+          width: 1rem;
+          display: inline-block;
+        }
+      }
+    }
+    sup {
+      font-size: 0.6rem;
+    }
+  }
+}

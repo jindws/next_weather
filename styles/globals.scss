@@ -1,0 +1,52 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  font-family: "Alegreya Sans", serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  list-style-type: none;
+}
+
+
+#app {
+  max-width: 700px;
+  margin: auto;
+}
+
+dl {
+  margin-block-start: 0;
+  margin-block-end: 0;
+dd {
+  margin-inline-start: 0;
+}
+}
+
+#index {
+  margin: auto;
+  background: linear-gradient(180deg, #e75481 -22.84%, #929cde 113.36%);
+  height: 100vh;
+  min-height: 38rem;
+  overflow: hidden;
+  position: relative;
+  > svg {
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    width: 3.75rem;
+  }
+}

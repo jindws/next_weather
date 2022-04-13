@@ -1,0 +1,13 @@
+@keyframes weather_icon {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+.weather_pic {
+  animation: weather_icon 2000ms backwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
