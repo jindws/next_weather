@@ -1,15 +1,15 @@
 import React, { useContext } from "react";
 import { IContext } from "../api/types";
 import Context from "../api/context";
-import getWeatherImg from "../api/getWeatherImg";
 import Humidity from "../../public/humidity";
 import Rain from "../../public/rain";
 import WindSpeed from "../../public/windSpeed";
 import Back from "../../public/back";
-import Link from "next/Link";
+// import Link from "next/Link";
 import styles from "./main.module.scss";
 import Week from "./week";
 import Chart from "./chart";
+import getWeatherImg from "../api/getWeatherImg";
 
 /**
  * 详情页
@@ -20,17 +20,20 @@ export default function Main() {
 
   return (
     <section className={styles.main}>
-      <Link href="/">
-        <div className={styles.main__back}>
-          <Back />
-        </div>
-      </Link>
+      {/*<Link href="/">*/}
+      {/*<div className={styles.main__back}>*/}
+      {/*  <Back />*/}
+      {/*</div>*/}
+      {/*</Link>*/}
+      <a className={styles.main__back} href="/">
+        <Back />
+      </a>
       <div className={styles.main__city}>
         {locations.city},<br />
         {locations.province}
       </div>
       <div className={styles.main__weather}>
-        {/*{getWeatherImg(now.text, night)}*/}
+        {getWeatherImg(now.text, night)}
       </div>
       <label className={styles.main__temp}>
         {now.temp}

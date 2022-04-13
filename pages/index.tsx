@@ -2,8 +2,7 @@ import type { NextPage } from "next";
 import styles from "./index.module.scss";
 import { useContext, useState } from "react";
 import W from "../public/w";
-import getWeatherImg from "./api/getWeatherImg";
-import Link from "next/link";
+// import Link from "next/link";
 import Rain from "../public/rain";
 import Humidity from "../public/humidity";
 import WindSpeed from "../public/windSpeed";
@@ -11,6 +10,7 @@ import Home from "../public/home";
 import Point from "./point";
 import { IContext } from "./api/types";
 import Context from "./api/context";
+import getWeatherImg from "./api/getWeatherImg";
 
 const Index: NextPage = () => {
   const { locations, night, now } = useContext(Context) as IContext;
@@ -21,7 +21,7 @@ const Index: NextPage = () => {
       <W />
       <div className={styles.index}>
         <div className={styles.index__weather}>
-          {/*{getWeatherImg(now.text, night)}*/}
+          {getWeatherImg(now.text, night)}
         </div>
         <div className={styles.index__city}>
           {locations.city}, {locations.province}
@@ -38,7 +38,8 @@ const Index: NextPage = () => {
             <span className={styles.index__data__text}>{now.text}</span>
           </dd>
         </dl>
-        <Link href="/main">详情</Link>
+        {/*<Link href="/main">详情</Link>*/}
+        <a href="/main">详情</a>
       </div>
       <dl className={styles.data}>
         <dd>
