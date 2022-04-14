@@ -7,8 +7,9 @@ const qKey = "ae9136fb06a04934bdd38d87b35ea563";
 /**
  * 根据ip获取定位
  */
-export async function getLocation() {
-  return Get(`https://restapi.amap.com/v3/ip?key=${gaoDeKey}`);
+export async function getLocation(ip?: string) {
+  const _ip = ip ? `&ip=${ip}` : "";
+  return Get(`https://restapi.amap.com/v3/ip?key=${gaoDeKey}${_ip}`);
 }
 
 /**

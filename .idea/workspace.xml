@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="188ce2ac-067a-4723-87db-67f249c07a19" name="Changes" comment="feat:">
+    <list default="true" id="188ce2ac-067a-4723-87db-67f249c07a19" name="Changes" comment="feat:get real ip">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_middleware.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +116,7 @@
       <workItem from="1649947820362" duration="228000" />
       <workItem from="1649948184472" duration="126000" />
       <workItem from="1649948488450" duration="115000" />
-      <workItem from="1649948710141" duration="7191000" />
+      <workItem from="1649948710141" duration="7711000" />
     </task>
     <task id="LOCAL-00001" summary="feat:init">
       <created>1649871928289</created>
@@ -188,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649954927206</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat:[&quot;x-real-ip&quot;]">
+      <created>1649959506408</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1649959506408</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +225,8 @@
     <MESSAGE value="feat:resolve build problem" />
     <MESSAGE value="feat:&quot;next/link&quot;;" />
     <MESSAGE value="feat:try find ip" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:try find ip" />
+    <MESSAGE value="feat:[&quot;x-real-ip&quot;]" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:[&quot;x-real-ip&quot;]" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

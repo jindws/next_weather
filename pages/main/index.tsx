@@ -69,8 +69,8 @@ export default function Main(props: IContext) {
 /**
  * @desc 服务端渲染ssr
  */
-export async function getServerSideProps() {
-  const locations = await getLocation();
+export async function getServerSideProps(data: any) {
+  const locations = await getLocation(data.req.headers["x-real-ip"]);
   const rectangle = locations.rectangle.split(";")[0];
   const { now }: INowWeather = await getWeather(rectangle);
   const hour = moment(now.obsTime).format("H");
