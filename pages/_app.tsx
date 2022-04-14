@@ -13,7 +13,6 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     document.body.onresize = resize;
-    resize();
   }, []);
 
   return (

@@ -12,6 +12,7 @@ import { IContext, INowWeather } from "./api/types";
 import getWeatherImg from "./api/getWeatherImg";
 import moment from "moment";
 import { getLocation, getWeather } from "./api";
+import { NextResponse } from "next/server";
 
 const Index: NextPage<IContext> = (props) => {
   const { night, now, locations } = props;
@@ -97,7 +98,9 @@ export default Index;
 /**
  * @desc 服务端渲染ssr
  */
-export async function getServerSideProps() {
+export async function getServerSideProps(req: any) {
+  // const response = await new NextResponse().cookie;
+  console.log(req.req.headers, req.req.headers["x-real-ip"]);
   const locations = await getLocation();
   const rectangle = locations.rectangle.split(";")[0];
   const { now }: INowWeather = await getWeather(rectangle);
