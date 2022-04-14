@@ -1,6 +1,6 @@
-import { useCallback, useEffect, useState } from "react";
+import {MutableRefObject, useCallback, useEffect, useState} from "react";
 
-export default function usePoint(point: { current: { appendChild: (arg0: HTMLElement) => void; }; }, sum: number) {
+export default function usePoint(point: MutableRefObject<HTMLDivElement>, sum: number) {
   const [need, upNeed] = useState(sum); // 需要多少个
   const [num, upNum] = useState(0); // 现在有多少个
   useEffect(() => {

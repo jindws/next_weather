@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import styles from "./index.module.scss";
 import { useEffect, useState } from "react";
 import W from "../public/w";
-// import Link from "next/link";
+import Link from "next/link";
 import Rain from "../public/rain";
 import Humidity from "../public/humidity";
 import WindSpeed from "../public/windSpeed";
@@ -53,8 +53,8 @@ const Index: NextPage<IContext> = (props) => {
             <span className={styles.index__data__text}>{now.text}</span>
           </dd>
         </dl>
-        {/*<Link href="/main">详情</Link>*/}
-        <a href="/main">详情</a>
+        <Link href="/main">详情</Link>
+        {/*<a href="/main">详情</a>*/}
       </div>
       <dl className={styles.data}>
         <dd>

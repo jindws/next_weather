@@ -7,7 +7,7 @@ import styles from "./main.module.scss";
  * @constructor
  */
 export default function Week(props: { daily: []; night: boolean }) {
-  const { daily, night } = props;
+  const { daily = [], night } = props;
   return (
     <dl className={styles.week}>
       {daily.map((itm: any) => {

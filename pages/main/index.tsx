@@ -4,7 +4,7 @@ import Humidity from "../../public/humidity";
 import Rain from "../../public/rain";
 import WindSpeed from "../../public/windSpeed";
 import Back from "../../public/back";
-// import Link from "next/Link";
+import Link from "next/Link";
 import styles from "./main.module.scss";
 import Week from "./week";
 import Chart from "./chart";
@@ -17,18 +17,26 @@ import moment from "moment";
  * @constructor
  */
 export default function Main(props: IContext) {
-  const { locations, now, night, rectangle, xData, yData, daily } = props;
+  const {
+    locations = { city: "", province: "" },
+    now = { text: "", temp: "", precip: "", humidity: "", windSpeed: "" },
+    night = false,
+    rectangle = "",
+    xData = [],
+    yData = [],
+    daily = [],
+  } = props;
 
   return (
     <section className={styles.main}>
-      {/*<Link href="/">*/}
-      {/*<div className={styles.main__back}>*/}
+      <Link href="/">
+        <div className={styles.main__back}>
+          <Back />
+        </div>
+      </Link>
+      {/*<a className={styles.main__back} href="/">*/}
       {/*  <Back />*/}
-      {/*</div>*/}
-      {/*</Link>*/}
-      <a className={styles.main__back} href="/">
-        <Back />
-      </a>
+      {/*</a>*/}
       <div className={styles.main__city}>
         {locations.city},<br />
         {locations.province}

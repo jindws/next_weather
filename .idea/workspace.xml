@@ -3,13 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="188ce2ac-067a-4723-87db-67f249c07a19" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/fetch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/fetch.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/hello.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/useLocalData.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/usePoint.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/usePoint.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/main/chart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main/chart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/main/week.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main/week.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/point.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/point.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,16 +33,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages/main" />
-    <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "/Users/moia/Desktop/work/next_weather/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Users/moia/Desktop/work/next_weather/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pages/main" />
@@ -53,7 +53,10 @@
       <recent name="$PROJECT_DIR$/pages/api" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.build">
+    <configuration type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -96,10 +99,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
+        <item itemvalue="JavaScript Debug." />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.pm2" />
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -113,7 +117,11 @@
       <updated>1649864519652</updated>
       <workItem from="1649864520823" duration="10427000" />
       <workItem from="1649924886215" duration="1455000" />
-      <workItem from="1649926852050" duration="4314000" />
+      <workItem from="1649926852050" duration="4638000" />
+      <workItem from="1649947820362" duration="228000" />
+      <workItem from="1649948184472" duration="126000" />
+      <workItem from="1649948488450" duration="115000" />
+      <workItem from="1649948710141" duration="1329000" />
     </task>
     <task id="LOCAL-00001" summary="feat:init">
       <created>1649871928289</created>
@@ -157,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649910069266</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat:使用getServerSideProps执行ssr,删除spa用的逻辑">
+      <created>1649932092263</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649932092263</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,7 +198,8 @@
     <MESSAGE value="feat:save readme" />
     <MESSAGE value="feat:优化echarts参数" />
     <MESSAGE value="feat:详情页天气图片完善" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:详情页天气图片完善" />
+    <MESSAGE value="feat:使用getServerSideProps执行ssr,删除spa用的逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:使用getServerSideProps执行ssr,删除spa用的逻辑" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

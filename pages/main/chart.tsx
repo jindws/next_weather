@@ -10,7 +10,7 @@ export default function Chart(props: {
   yData: number[];
   xData: number[];
 }) {
-  const { xData, yData } = props;
+  const { xData = [], yData = [] } = props;
   const [activeIndex, upActiveIndex] = useState(Infinity);
   const chart: any = useRef();
 
