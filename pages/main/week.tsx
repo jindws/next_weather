@@ -1,8 +1,4 @@
-import React, { useEffect, useState, useContext, useCallback } from "react";
-import { get7Weather } from "../api";
-import Context from "../api/context";
-import { IContext } from "../api/types";
-import moment from "moment";
+import React from "react";
 import getWeatherImg from "../api/getWeatherImg";
 import styles from "./main.module.scss";
 
@@ -10,25 +6,14 @@ import styles from "./main.module.scss";
  * 一周天气
  * @constructor
  */
-export default function Week() {
-  const { rectangle, night } = useContext(Context) as IContext;
-  const [data, upData] = useState([]);
-
-  useEffect(() => {
-    if (rectangle) {
-      get7Weather(rectangle).then((data: { daily: [] }) => {
-        upData(data.daily);
-      });
-    }
-  }, [rectangle]);
-
+export default function Week(props: { daily: []; night: boolean }) {
+  const { daily, night } = props;
   return (
     <dl className={styles.week}>
-      {data.map((itm: any) => {
-        moment.locale("zh-cn");
+      {daily.map((itm: any) => {
         return (
           <dd key={itm.fxDate}>
-            <span>{moment(itm.fxDate).format("周dd")}</span>
+            <span>{itm.week}</span>
             {getWeatherImg(itm.textDay, night)}
             <label>
               {itm.tempMax}

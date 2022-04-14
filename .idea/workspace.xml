@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="188ce2ac-067a-4723-87db-67f249c07a19" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/fetch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/fetch.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main/chart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main/chart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/main/week.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main/week.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +22,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="27kWMvk5UooEZ6xvHzPdyv9gzrE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -44,7 +53,7 @@
       <recent name="$PROJECT_DIR$/pages/api" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.pm2">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -87,10 +96,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.pm2" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
-        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -103,6 +112,8 @@
       <option name="presentableId" value="Default" />
       <updated>1649864519652</updated>
       <workItem from="1649864520823" duration="10427000" />
+      <workItem from="1649924886215" duration="1455000" />
+      <workItem from="1649926852050" duration="4314000" />
     </task>
     <task id="LOCAL-00001" summary="feat:init">
       <created>1649871928289</created>
@@ -139,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649909701862</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat:详情页天气图片完善">
+      <created>1649910069266</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649910069266</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +182,8 @@
     <MESSAGE value="feat:&quot;@types/next&quot;: &quot;^9.0.0&quot;" />
     <MESSAGE value="feat:save readme" />
     <MESSAGE value="feat:优化echarts参数" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:优化echarts参数" />
+    <MESSAGE value="feat:详情页天气图片完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:详情页天气图片完善" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -14,6 +14,9 @@ export interface IContext {
     windDir: string;
   };
   night: boolean;
+  xData: number[];
+  yData: number[];
+  daily: [];
 }
 
 export interface INowWeather {

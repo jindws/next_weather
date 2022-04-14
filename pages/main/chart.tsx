@@ -1,48 +1,20 @@
-import React, {
-  useEffect,
-  useState,
-  useContext,
-  useMemo,
-  useRef,
-  useCallback,
-} from "react";
-import { get24hWeather } from "../api";
-import Context from "../api/context";
-import { IContext } from "../api/types";
-import moment from "moment";
+import React, { useEffect, useState, useRef, useCallback } from "react";
 import styles from "./main.module.scss";
 
 /**
  * 使用echarts
  * @constructor
  */
-export default function Chart() {
-  const { rectangle } = useContext(Context) as IContext;
-  const [today, upToday] = useState([]) as any;
+export default function Chart(props: {
+  rectangle: string;
+  yData: number[];
+  xData: number[];
+}) {
+  const { xData, yData } = props;
   const [activeIndex, upActiveIndex] = useState(Infinity);
   const chart: any = useRef();
 
-  const [xData, yData] = useMemo(() => {
-    moment.locale("en-us");
-    const xData = [];
-    const yData = [];
-    for (const itm of today) {
-      xData.push(moment(itm.fxTime).format("h a"));
-      yData.push(+itm.temp);
-    }
-    return [xData, yData];
-  }, [today]);
-
   useEffect(() => {
-    if (rectangle) {
-      get24hWeather(rectangle).then((data: { hourly: [] }) => {
-        upToday(data.hourly);
-      });
-    }
-  }, [rectangle]);
-
-  useEffect(() => {
-    if (!globalThis.echarts) return;
     const myChart = echarts.init(chart.current);
     myChart.setOption({
       xAxis: {
@@ -89,7 +61,7 @@ export default function Chart() {
         },
       ],
     });
-  }, [xData, yData]);
+  }, [globalThis.echarts]);
 
   const update = useCallback((event) => {
     upActiveIndex(+event.currentTarget.dataset.id);

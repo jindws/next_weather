@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import styles from "./index.module.scss";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import W from "../public/w";
 // import Link from "next/link";
 import Rain from "../public/rain";
@@ -8,13 +8,13 @@ import Humidity from "../public/humidity";
 import WindSpeed from "../public/windSpeed";
 import Home from "../public/home";
 import Point from "./point";
-import { IContext } from "./api/types";
-import Context from "./api/context";
+import { IContext, INowWeather } from "./api/types";
 import getWeatherImg from "./api/getWeatherImg";
 import moment from "moment";
+import { getLocation, getWeather } from "./api";
 
-const Index: NextPage = () => {
-  const { locations, night, now } = useContext(Context) as IContext;
+const Index: NextPage<IContext> = (props) => {
+  const { night, now, locations } = props;
 
   const [time, upTime] = useState({ week: "", aft: "" }); // 时间
 
@@ -93,3 +93,16 @@ const Index: NextPage = () => {
 };
 
 export default Index;
+
+/**
+ * @desc 服务端渲染ssr
+ */
+export async function getServerSideProps() {
+  const locations = await getLocation();
+  const rectangle = locations.rectangle.split(";")[0];
+  const { now }: INowWeather = await getWeather(rectangle);
+  const hour = moment(now.obsTime).format("H");
+  const night = +hour >= 18 || +hour <= 6;
+
+  return { props: { locations, rectangle, now, night } };
+}
