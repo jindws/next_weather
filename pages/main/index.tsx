@@ -34,9 +34,6 @@ export default function Main(props: IContext) {
           <Back />
         </div>
       </Link>
-      {/*<a className={styles.main__back} href="/">*/}
-      {/*  <Back />*/}
-      {/*</a>*/}
       <div className={styles.main__city}>
         {locations.city},<br />
         {locations.province}

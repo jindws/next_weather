@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="188ce2ac-067a-4723-87db-67f249c07a19" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/_middleware.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +48,7 @@
       <recent name="$PROJECT_DIR$/pages/api" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.dev">
     <configuration type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -93,9 +94,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
-        <item itemvalue="JavaScript Debug." />
         <item itemvalue="npm.dev" />
+        <item itemvalue="JavaScript Debug." />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.pm2" />
         <item itemvalue="npm.start" />
       </list>
@@ -115,7 +116,7 @@
       <workItem from="1649947820362" duration="228000" />
       <workItem from="1649948184472" duration="126000" />
       <workItem from="1649948488450" duration="115000" />
-      <workItem from="1649948710141" duration="2559000" />
+      <workItem from="1649948710141" duration="4525000" />
     </task>
     <task id="LOCAL-00001" summary="feat:init">
       <created>1649871928289</created>
@@ -173,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649950670662</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat:&quot;next/link&quot;;">
+      <created>1649952399367</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1649952399367</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +209,8 @@
     <MESSAGE value="feat:详情页天气图片完善" />
     <MESSAGE value="feat:使用getServerSideProps执行ssr,删除spa用的逻辑" />
     <MESSAGE value="feat:resolve build problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:resolve build problem" />
+    <MESSAGE value="feat:&quot;next/link&quot;;" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:&quot;next/link&quot;;" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
