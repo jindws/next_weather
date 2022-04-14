@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="188ce2ac-067a-4723-87db-67f249c07a19" name="Changes" comment="">
+    <list default="true" id="188ce2ac-067a-4723-87db-67f249c07a19" name="Changes" comment="feat:save readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main/chart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main/chart.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,7 @@
       <recent name="$PROJECT_DIR$/pages/api" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.pm2">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -67,6 +66,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="pm2" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="pm2" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -79,6 +88,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.pm2" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
@@ -116,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649880591551</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat:save readme">
+      <created>1649904589190</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649904589190</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +156,8 @@
     <MESSAGE value="feat:init" />
     <MESSAGE value="feat:for run" />
     <MESSAGE value="feat:&quot;@types/next&quot;: &quot;^9.0.0&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:&quot;@types/next&quot;: &quot;^9.0.0&quot;" />
+    <MESSAGE value="feat:save readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:save readme" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

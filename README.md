@@ -1,5 +1,7 @@
 ## 天气
-- 基于next.js的SSR服务端渲染
+- 基于next.js的SSR服务端渲染 `https://weather.jindw.xyz`
+- 普通SPA版本:`https://github.com/jindws/jindws.github.io`
+
 ### UI DESIGN
 ![design](https://jindw.xyz/upload/2022/04/design-fca44b8e909c4bef9d7904c69e855c1e.png)
 

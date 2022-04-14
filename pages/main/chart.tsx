@@ -55,8 +55,8 @@ export default function Chart() {
       yAxis: {
         type: "value",
         show: false,
-        min: Math.min.apply(null, yData),
-        max: Math.max.apply(null, yData) - 2,
+        min: Math.min.apply(null, yData) - 1,
+        max: Math.max.apply(null, yData) + 1,
         splitLine: {
           show: false,
         },
