@@ -4,7 +4,7 @@ import Humidity from "../../public/humidity";
 import Rain from "../../public/rain";
 import WindSpeed from "../../public/windSpeed";
 import Back from "../../public/back";
-import Link from "next/Link";
+import Link from "next/link";
 import styles from "./main.module.scss";
 import Week from "./week";
 import Chart from "./chart";
