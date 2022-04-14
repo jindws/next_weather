@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start -p 3000",
+    "lint": "next lint",
+    "pm2": "pm2 start npm --watch --name weather -- run start"
   },
   "dependencies": {
     "moment": "^2.29.2",
@@ -22,6 +23,7 @@
     "@types/react-dom": "17.0.2",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.5",
+    "pm2": "^5.2.0",
     "prettier": "^2.6.2",
     "sass": "^1.50.0",
     "sharp": "^0.30.3",

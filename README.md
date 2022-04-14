@@ -1,34 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 天气
+- 基于next.js的SSR服务端渲染
+### UI DESIGN
+![design](https://jindw.xyz/upload/2022/04/design-fca44b8e909c4bef9d7904c69e855c1e.png)
 
-## Getting Started
+### 技术栈
+`next.js`,`sass`,`echarts`,`typescript`,`eslint`
+- 关于数据
+    - 使用高德地图api获取ip定位
+    - 使用和风天气获取天气信息
+### 展示地址
+`https://weather.jindw.xyz/`
 
-First, run the development server:
+> 实现 ui
 
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 首页`https://weather.jindw.xyz/`
+    - 首页背景会随机分布 6 个白点
+        - 点击白点会随机再加一个白点
+    - 天气图标一点动态
+    - 风向天气一点动态
+    - 使用 rem,兼容各种屏幕,支持 pc(宽度超过 700px 认为是 pc),支持窗口重置
+- 详情页`https://weather.jindw.xyz/main`
+    - Today 使用的是 echarts 实现
+> 图标区分白天黑夜
+- 根据天气预报的时间,6-18 天展示白天的图标,之后展示夜晚的图标
+### 其他
+- 降水量展示的是1h降水量

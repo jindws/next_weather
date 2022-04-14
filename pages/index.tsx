@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import styles from "./index.module.scss";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import W from "../public/w";
 // import Link from "next/link";
 import Rain from "../public/rain";
@@ -11,11 +11,26 @@ import Point from "./point";
 import { IContext } from "./api/types";
 import Context from "./api/context";
 import getWeatherImg from "./api/getWeatherImg";
+import moment from "moment";
 
 const Index: NextPage = () => {
   const { locations, night, now } = useContext(Context) as IContext;
 
   const [time, upTime] = useState({ week: "", aft: "" }); // 时间
+
+  useEffect(() => {
+    if (now.obsTime) {
+      moment.locale("zh-cn");
+      const week = moment(now.obsTime).format("周dd");
+      moment.locale("en-us");
+      const aft = moment(now.obsTime).format("h a");
+      upTime({
+        week,
+        aft,
+      });
+    }
+  }, [now.obsTime]);
+
   return (
     <section id="index">
       <W />
