@@ -12,7 +12,6 @@ import { IContext, INowWeather } from "./api/types";
 import getWeatherImg from "./api/getWeatherImg";
 import moment from "moment";
 import { getLocation, getWeather } from "./api";
-import { NextResponse } from "next/server";
 
 const Index: NextPage<IContext> = (props) => {
   const { night, now, locations } = props;

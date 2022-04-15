@@ -5,6 +5,14 @@
 ### UI DESIGN
 ![design](https://jindw.xyz/upload/2022/04/design-fca44b8e909c4bef9d7904c69e855c1e.png)
 
+### nginx配置
+需要获取真实用户ip地址
+```
+location配置:
+proxy_set_header Host $http_host;
+proxy_set_header X-Real-IP $remote_addr;
+proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+```
 ### 技术栈
 `next.js`,`sass`,`echarts`,`typescript`,`eslint`
 - 关于数据

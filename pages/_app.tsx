@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     document.body.onresize = resize;
+    resize();
   }, []);
 
   return (
@@ -22,7 +23,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         id="echarts-js"
         strategy="beforeInteractive"
         src="https://cdn.bootcdn.net/ajax/libs/echarts/5.3.2/echarts.min.js"
-        onLoad={resize}
       />
     </>
   );
