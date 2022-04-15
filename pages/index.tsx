@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import styles from "./index.module.scss";
-import { useEffect, useState } from "react";
+import { useMemo } from "react";
 import W from "../public/w";
 import Link from "next/link";
 import Rain from "../public/rain";
@@ -12,24 +12,41 @@ import { IContext, INowWeather } from "./api/types";
 import getWeatherImg from "./api/getWeatherImg";
 import moment from "moment";
 import { getLocation, getWeather } from "./api";
+import useSWR from "swr";
 
 const Index: NextPage<IContext> = (props) => {
-  const { night, now, locations } = props;
+  const { locations, rectangle } = props;
+  const { data: nowWeather, error } = useSWR(
+    "/api/user",
+    getWeather.bind(null, rectangle),
+    { refreshInterval: 5 * 60 * 1000 }
+  );
 
-  const [time, upTime] = useState({ week: "", aft: "" }); // 时间
-
-  useEffect(() => {
-    if (now.obsTime) {
+  const {
+    now = {
+      text: "",
+      temp: "",
+      windDir: "",
+      precip: "",
+      windSpeed: "",
+      humidity: "",
+    },
+    hour,
+    night,
+    time = { week: "", aft: "" },
+  } = useMemo(() => {
+    if (nowWeather) {
+      const { now } = nowWeather as INowWeather;
       moment.locale("zh-cn");
       const week = moment(now.obsTime).format("周dd");
       moment.locale("en-us");
       const aft = moment(now.obsTime).format("h a");
-      upTime({
-        week,
-        aft,
-      });
+      const hour = moment(now.obsTime).format("H");
+      const night = +hour >= 18 || +hour <= 6;
+      return { now, hour, night, time: { week, aft } };
     }
-  }, [now.obsTime]);
+    return {};
+  }, [nowWeather]);
 
   return (
     <section id="index">
@@ -107,9 +124,9 @@ export default Index;
 export async function getServerSideProps(data: any) {
   const locations = await getLocation(data.req.headers["x-real-ip"]);
   const rectangle = locations.rectangle.split(";")[0];
-  const { now }: INowWeather = await getWeather(rectangle);
-  const hour = moment(now.obsTime).format("H");
-  const night = +hour >= 18 || +hour <= 6;
+  // const { now }: INowWeather = await getWeather(rectangle);
+  // const hour = moment(now.obsTime).format("H");
+  // const night = +hour >= 18 || +hour <= 6;
 
-  return { props: { locations, rectangle, now, night } };
+  return { props: { locations, rectangle } };
 }

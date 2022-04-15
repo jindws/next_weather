@@ -11,6 +11,7 @@ import Chart from "./chart";
 import getWeatherImg from "../api/getWeatherImg";
 import { get24hWeather, get7Weather, getLocation, getWeather } from "../api";
 import moment from "moment";
+import { GetServerSideProps } from "next";
 
 /**
  * 详情页
@@ -69,8 +70,10 @@ export default function Main(props: IContext) {
 /**
  * @desc 服务端渲染ssr
  */
-export async function getServerSideProps(data: any) {
-  const locations = await getLocation(data.req.headers["x-real-ip"]);
+export const getServerSideProps: GetServerSideProps = async function (
+  context: any
+) {
+  const locations = await getLocation(context.req.headers["x-real-ip"]);
   const rectangle = locations.rectangle.split(";")[0];
   const { now }: INowWeather = await getWeather(rectangle);
   const hour = moment(now.obsTime).format("H");
@@ -90,4 +93,4 @@ export async function getServerSideProps(data: any) {
   }
 
   return { props: { locations, rectangle, now, night, xData, yData, daily } };
-}
+};
