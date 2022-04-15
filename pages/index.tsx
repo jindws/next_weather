@@ -54,26 +54,31 @@ const Index: NextPage<IContext> = (props) => {
           </dd>
         </dl>
         <Link href="/main">详情</Link>
-        {/*<a href="/main">详情</a>*/}
       </div>
       <dl className={styles.data}>
         <dd>
           <span>
-            <Rain />
+            <label>
+              <Rain />
+            </label>
             降水量
           </span>
           <span>{now.precip}毫米</span>
         </dd>
         <dd>
           <span>
-            <Humidity />
+            <label>
+              <Humidity />
+            </label>
             湿度
           </span>
           <span>{now.humidity}%</span>
         </dd>
         <dd>
           <span>
-            <WindSpeed />
+            <label>
+              <WindSpeed />
+            </label>
             风速
           </span>
           <span>{now.windSpeed}km/h</span>
@@ -82,7 +87,9 @@ const Index: NextPage<IContext> = (props) => {
       <section className={styles.footer}>
         <div className={styles.home}>
           <div className={styles.home__data}>
-            <Home />
+            <label>
+              <Home />
+            </label>
             <div>Home</div>
           </div>
         </div>

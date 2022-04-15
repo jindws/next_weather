@@ -5,7 +5,7 @@ export default function Humidity({ color = "white" }: { color?: string }) {
     <svg
       width="0.5rem"
       style={{
-        margin: "0 0.5rem",
+        margin: "0 1rem 0 0.5rem",
       }}
       viewBox="0 0 8 18"
       fill="none"

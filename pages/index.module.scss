@@ -146,12 +146,18 @@
   dd {
     display: flex;
     justify-content: space-between;
+    label{
+      flex:0 0 2rem;
+      display: flex;
+      align-items: center;
+    }
     svg {
       margin-right: 0.5rem;
     }
     span {
       display: flex;
       align-items: center;
+      white-space: nowrap;
     }
   }
 }

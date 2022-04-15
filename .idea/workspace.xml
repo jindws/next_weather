@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="188ce2ac-067a-4723-87db-67f249c07a19" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/humidity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/public/humidity.tsx" afterDir="false" />
     </list>
@@ -117,7 +116,7 @@
       <workItem from="1649947820362" duration="228000" />
       <workItem from="1649948184472" duration="126000" />
       <workItem from="1649948488450" duration="115000" />
-      <workItem from="1649948710141" duration="11096000" />
+      <workItem from="1649948710141" duration="12400000" />
     </task>
     <task id="LOCAL-00001" summary="feat:init">
       <created>1649871928289</created>
@@ -203,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649960057215</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat:解决safari的ui兼容问题">
+      <created>1649993932506</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1649993932506</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +241,8 @@
     <MESSAGE value="feat:try find ip" />
     <MESSAGE value="feat:[&quot;x-real-ip&quot;]" />
     <MESSAGE value="feat:done" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:done" />
+    <MESSAGE value="feat:解决safari的ui兼容问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:解决safari的ui兼容问题" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
