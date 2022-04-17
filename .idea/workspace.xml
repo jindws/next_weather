@@ -4,8 +4,7 @@
     <list default="true" id="188ce2ac-067a-4723-87db-67f249c07a19" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,15 +27,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "/Users/moia/Desktop/work/next_weather/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/moia/Desktop/work/next_weather/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/moia/Desktop/work/next_weather/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/moia/Desktop/work/next_weather/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pages/main" />
@@ -48,7 +47,7 @@
       <recent name="$PROJECT_DIR$/pages/api" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.build">
     <configuration type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -94,9 +93,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug." />
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.pm2" />
         <item itemvalue="npm.start" />
       </list>
@@ -116,7 +114,8 @@
       <workItem from="1649947820362" duration="228000" />
       <workItem from="1649948184472" duration="126000" />
       <workItem from="1649948488450" duration="115000" />
-      <workItem from="1649948710141" duration="17858000" />
+      <workItem from="1649948710141" duration="18705000" />
+      <workItem from="1650203026921" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="feat:init">
       <created>1649871928289</created>
@@ -216,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649995640488</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="feat:首页每5min获取一次数据">
+      <created>1650030784866</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1650030784866</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +256,8 @@
     <MESSAGE value="feat:done" />
     <MESSAGE value="feat:解决safari的ui兼容问题" />
     <MESSAGE value="feat:样式优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:样式优化" />
+    <MESSAGE value="feat:首页每5min获取一次数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:首页每5min获取一次数据" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

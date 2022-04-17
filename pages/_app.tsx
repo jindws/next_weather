@@ -1,20 +1,12 @@
 import "../styles/globals.scss";
 import type { AppProps } from "next/app";
-import { useCallback, useEffect, useState } from "react";
 import Script from "next/script";
+import { useRem } from "shooks";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const resize = useCallback(() => {
-    const maxWidth = 700;
-    const size = (Math.min(innerWidth, maxWidth) / 375) * 16;
-
-    document.getElementsByTagName("html")[0].style.fontSize = size + "px";
-  }, []);
-
-  useEffect(() => {
-    document.body.onresize = resize;
-    resize();
-  }, []);
+  useRem({
+    maxWidth: 700,
+  });
 
   return (
     <>
